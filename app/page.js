@@ -1,103 +1,128 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  <div className="min-h-screen  bg-slate-100">
+    <header className="text-slate-800 flex justify-center items-center flex-col md:bg-gray-200 md:m-3 md: h-90">
+      <img src="/logo.webp" width={150} height={200} />
+      <h2 className="font-bold font-title text-xl pt-4 md:text-3xl ">CONSULTORIA DE RH</h2>
+    <div className="hidden md:flex">
+      <p className="flex"><a href="/">Currículo /</a></p>
+      <p className="pl-1"><a href="/contato">Contato</a></p>  
+    </div>    
+    </header> 
+    
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="md:bg-gray-200 md:m-3 md:h-300">
+         <div className="p-4 md:w-8/12  bg-white shadow mx-auto">
+      <div className="md:flex md:gap-16">
+        <img src="/bio.webp" className="w-screen md:w-84"/>
+        <div>
+          <h1 className="text-6xl font-bold pt-16 pb-2">Eduarda <br />Machado</h1>
+          <div className="w-20 h-1 bg-amber-300"></div>
+          <p className="pt-2 text-gray-500">Consultora de Reursos Humanos</p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      <div className="md:flex md:gap-50">
+        <div>
+          <h2 className="text-3xl font-bold pt-12 pb-2">SOBRE MIM</h2>
+          <div className="w-20 h-1 bg-amber-300"></div>
+        </div>
+        <div>
+          <p className="pt-20">Olá, sou <b>Eduarda Machado</b>, consultora apaixonada por conectar pessoas e oportunidades</p>
+        <ul className="pt-4 list-disc px-8">
+          <li>
+            <p>Atuo na área de Recursos Humanos há mais de 3 anos, com sólida experiência em gestão de equipes e colaboradores em grandes estruturas, como clubes aquáticos.</p>
+          </li>
+          <li> 
+            <p>Ao longo dessa trajetória, desenvolvi um olhar atento para o comportamento humano, o potencial de cada profissional e a importância de um processo seletivo humanizado, estratégico e eficiente.</p>
+          </li>
+         <li>
+            <p>Há quase dois anos me dedico exclusivamente ao Recrutamento e Seleção, uma área que me encanta pela capacidade de transformar carreiras e fortalecer empresas.</p>
+         </li>
+          <li>
+             <p>Sempre em busca de aprimoramento e novas vivências, em 2025 decidi dar um passo além: empreender. Assim nasceu minha consultoria de RH — com o propósito de oferecer soluções personalizadas tanto para empresas quanto para profissionais que desejam se destacar no mercado.</p>
+          </li>
+          <li>
+            <p className="pb-2">Meu trabalho é feito com escuta, técnica e propósito. Vamos juntos?</p>
+          </li>
+        </ul>
+        </div>
+      </div>
+      <div>
+       <div className="h-0.5 bg-gray-200"></div>
+       <div className="md:flex">
+            <div>
+                <h2 className="text-4xl font-bold pt-2 pb-2">Nossa Visão, Missão e Valores </h2>
+                 <div className="w-20 h-1 bg-amber-300"></div>
+            </div>
+            <div>
+        <p className="pt-6 pb-4"><b>Nossa missão</b> é promover processos seletivos transparentes, humanizados e eficientes, que valorizem não apenas habilidades, mas também trajetórias e propósitos.</p>
+        <p className="pb-4"><b>Nossa visão</b> é ser reconhecida como uma consultoria referência em recrutamento humanizado, contribuindo para ambientes de trabalho mais diversos, produtivos e alinhados com os valores das organizações.</p>
+        <p className="pb-6"><b>Nossos valores</b> nos guiam em cada projeto:</p>
+        <ul>
+        <li>
+            <p><b>Humanização:</b> colocamos as pessoas no centro das decisões.</p>
+      
+            <p><b>Transparência:</b> atuamos com ética e clareza em todas as etapas.</p>
+          </li>
+          <li>
+            <p><b>Comprometimento:</b> assumimos cada desafio com foco e dedicação.</p>
+          </li>
+          <li>
+            <p><b>Excelência:</b> buscamos sempre o melhor resultado para todos os envolvidos.</p>
+          </li>
+          <li>
+            <p><b>Inclusão e Diversidade:</b> respeitamos e valorizamos todas as pessoas.</p>
+          </li>
+          <li><p><b>Crescimento Contínuo</b> acreditamos no desenvolvimento como caminho para o sucesso.</p></li>
+        </ul>
+       </div>
+       </div>
+       
+        
     </div>
+    </div>
+    </div>
+
+
+    <div className="p-4 md:bg-gray-200 md:m-3">
+      <div className="p-4 md:w-8/12 md:bg-white shadow md:mx-auto">
+         <h1 className="text-4xl font-bold text-center pb-2">Serviços</h1>
+      <div className="w-20 h-1 bg-amber-300 flex mx-auto"></div>
+      <h2 className=" py-6 text-2xl font-bold">CONSULTORIA  EMPRESARIAL | RECRUTAMENTO E SELEÇÃO</h2>
+      <ul>
+        <li>
+          <p>- Triagem de currículos;</p>
+        </li>
+        <li>
+          <p>- Banco de currículos;</p>
+        </li>
+        <li>
+          <p>- Buscas em plataformas como Infosjobs, Linkedin e indeed;</p>
+        </li>
+        <li>
+          <p>- Relatório de entrevista;</p>
+        </li>
+        <li>
+         <p>- Divulgação das vagas sites como Infojobs, LinkedIn, etc.</p>
+        </li>
+      </ul>
+      <h2 className=" py-6 text-2xl font-bold">CONSULTORIA E CARREIRA | CANDIDATO</h2>
+        <p>- Análise de Curriculo;</p> 
+        <p>- Personalização do seu CV do zero;</p>
+        <p>- Consultora LinkedIn</p>
+        <p>- Preparação para entrevistas;</p>
+        <p>- Carta de apresentação.</p>
+      </div>
+    </div>
+    <div className="bg-neutral-800 h-50 m-4 text-center text-white py-15">
+      <h1>Falar agora com um especialista</h1>
+        <Link href="/"><button className="bg-black w-40 h-10 m-5">Entre em contato</button></Link>
+    </div>
+    <footer className="text-center">
+      <p>© 2025 Todos os direitos reservados</p>
+    </footer>
+  </div>
   );
 }
