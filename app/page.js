@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-  <div className="min-h-screen  bg-slate-100">
+  <div className="min-h-screen bg-slate-100">
     <header className="text-slate-800 flex justify-center items-center flex-col md:bg-gray-200 md:m-3 md: h-90">
       <img src="/logo.webp" width={150} height={200} />
       <h2 className="font-bold font-title text-xl pt-4 md:text-3xl ">CONSULTORIA DE RH</h2>
@@ -16,7 +16,7 @@ export default function Home() {
     <div className="md:bg-gray-200 md:m-3 md:h-300">
          <div className="p-4 md:w-8/12  bg-white shadow mx-auto">
       <div className="md:flex md:gap-16">
-        <img src="/bio.webp" className="w-screen md:w-84"/>
+        <img src="/bio2.webp" className="w-screen md:w-64"/>
         <div>
           <h1 className="text-6xl font-bold pt-16 pb-2">Eduarda <br />Machado</h1>
           <div className="w-20 h-1 bg-amber-300"></div>
@@ -44,14 +44,14 @@ export default function Home() {
              <p>Sempre em busca de aprimoramento e novas vivências, em 2025 decidi dar um passo além: empreender. Assim nasceu minha consultoria de RH — com o propósito de oferecer soluções personalizadas tanto para empresas quanto para profissionais que desejam se destacar no mercado.</p>
           </li>
           <li>
-            <p className="pb-2">Meu trabalho é feito com escuta, técnica e propósito. Vamos juntos?</p>
+            <p className="pb-4">Meu trabalho é feito com escuta, técnica e propósito. Vamos juntos?</p>
           </li>
         </ul>
         </div>
       </div>
       <div>
        <div className="h-0.5 bg-gray-200"></div>
-       <div className="md:flex">
+       <div className="md:flex md:gap-20">
             <div>
                 <h2 className="text-4xl font-bold pt-2 pb-2">Nossa Visão, Missão e Valores </h2>
                  <div className="w-20 h-1 bg-amber-300"></div>
@@ -59,7 +59,7 @@ export default function Home() {
             <div>
         <p className="pt-6 pb-4"><b>Nossa missão</b> é promover processos seletivos transparentes, humanizados e eficientes, que valorizem não apenas habilidades, mas também trajetórias e propósitos.</p>
         <p className="pb-4"><b>Nossa visão</b> é ser reconhecida como uma consultoria referência em recrutamento humanizado, contribuindo para ambientes de trabalho mais diversos, produtivos e alinhados com os valores das organizações.</p>
-        <p className="pb-6"><b>Nossos valores</b> nos guiam em cada projeto:</p>
+        <p className="pb-1"><b>Nossos valores</b> nos guiam em cada projeto:</p>
         <ul>
         <li>
             <p><b>Humanização:</b> colocamos as pessoas no centro das decisões.</p>
@@ -118,7 +118,7 @@ export default function Home() {
     </div>
     <div className="bg-neutral-800 h-50 m-4 text-center text-white py-15">
       <h1>Falar agora com um especialista</h1>
-        <Link href="/"><button className="bg-black w-40 h-10 m-5">Entre em contato</button></Link>
+        <Link href="/contato"><button className="bg-black w-40 h-10 m-5 cursor-pointer">Entre em contato</button></Link>
     </div>
     <footer className="text-center">
       <p>© 2025 Todos os direitos reservados</p>

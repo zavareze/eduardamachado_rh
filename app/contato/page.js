@@ -16,7 +16,7 @@ export default function Contato() {
     <div className="m-4 justify-center md:flex md:gap-16">
         <img src="/logo.webp" className="w-full md:w-84"/>
         <div>
-          <h2 className="font-bold font-title text-4xl pt-10 md:text-3xl">Consultoria de RH</h2>
+          <h2 className="font-bold font-title text-4xl pt-10 md:text-3xl"><a href="/">Consultoria de RH</a></h2>
           <p className="text-gray-400 pt-6 pb-1 text-2xl">Conectamos talentos às oportunidades certas</p>
           <div className="w-20 h-1 bg-amber-300"></div>
           <p className="pt-4 font-bold">Somos uma consultoria de RH séria, comprometida com resultados reais.</p>
@@ -33,7 +33,7 @@ export default function Contato() {
               <label className="text-white font-bold">Nome</label>
               <input type="text" id="nome" name="nome" className="bg-white md:h-10 md:w-100 w-full"/>
 
-              <label className="text-white font-bold pt-2">Email </label>
+              <label className="text-white font-bold pt-2">Email</label>
               <input type="email" id="email" name="email" className="bg-white md:h-10 md:w-100 w-full"/>
 
               <label className="text-white font-bold pt-2">Mensagem</label>
