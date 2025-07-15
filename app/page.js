@@ -4,7 +4,7 @@ export default function Home() {
   return (
   <div className="min-h-screen bg-slate-100">
     <header className="text-slate-800 flex justify-center items-center flex-col md:bg-gray-200 md:m-3 md: h-90">
-      <img src="/logo.webp" width={150} height={200} />
+      <img src="/dinamize.jpg" width={150} height={200} />
       <h2 className="font-bold font-title text-xl pt-4 md:text-3xl ">CONSULTORIA DE RH</h2>
     <div className="hidden md:flex">
       <p className="flex"><a href="/">Currículo /</a></p>
@@ -20,7 +20,7 @@ export default function Home() {
         <div>
           <h1 className="text-6xl font-bold pt-16 pb-2">Eduarda <br />Machado</h1>
           <div className="w-20 h-1 bg-amber-300"></div>
-          <p className="pt-2 text-gray-500">Consultora de Reursos Humanos</p>
+          <p className="pt-2 text-gray-500">Consultora de Recursos Humanos</p>
         </div>
       </div>
       <div className="md:flex md:gap-50">

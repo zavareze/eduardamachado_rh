@@ -1,11 +1,10 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Contato() {
   return (
   <div className="bg-slate-100 min-h-screen">
     <header className="text-slate-800 flex justify-center items-center flex-col md:bg-gray-200 md:m-3 md: h-90">
-      <img src="/logo.webp" width={150} height={200} />
+      <img src="/dinamize.jpg" width={150} height={200} />
       <h2 className="font-bold font-title text-xl pt-4 md:text-3xl">CONSULTORIA DE RH</h2>
       <div className="hidden md:flex">
         <p className="flex"><a href="/">Currículo /</a></p>
@@ -14,7 +13,7 @@ export default function Contato() {
     </header>
     
     <div className="m-4 justify-center md:flex md:gap-16">
-        <img src="/logo.webp" className="w-full md:w-84"/>
+        <img src="/dinamize.jpg" className="w-full md:w-84"/>
         <div>
           <h2 className="font-bold font-title text-4xl pt-10 md:text-3xl"><a href="/">Consultoria de RH</a></h2>
           <p className="text-gray-400 pt-6 pb-1 text-2xl">Conectamos talentos às oportunidades certas</p>
