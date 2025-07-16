@@ -7,14 +7,14 @@ export default function Home() {
       <img src="/dinamize.jpg" width={150} height={200} />
       <h2 className="font-bold font-title text-xl pt-4 md:text-3xl ">CONSULTORIA DE RH</h2>
     <div className="hidden md:flex">
-      <p className="flex"><a href="/">Currículo /</a></p>
+      <p className="flex"><a href="/">Sobre Mim /</a></p>
       <p className="pl-1"><a href="/contato">Contato</a></p>  
     </div>    
     </header> 
     
 
-    <div className="md:bg-gray-200 md:m-3 md:h-300">
-         <div className="p-4 md:w-8/12  bg-white shadow mx-auto">
+    <div className="md:bg-gray-200 md:m-3">
+         <div className="p-4 sm:w-10/12 lg:w-8/12 bg-white shadow mx-auto">
       <div className="md:flex md:gap-16">
         <img src="/bio2.webp" className="w-screen md:w-64"/>
         <div>
@@ -23,9 +23,9 @@ export default function Home() {
           <p className="pt-2 text-gray-500">Consultora de Recursos Humanos</p>
         </div>
       </div>
-      <div className="md:flex md:gap-50">
+      <div className="md:flex md:gap-20">
         <div>
-          <h2 className="text-3xl font-bold pt-12 pb-2">SOBRE MIM</h2>
+          <h2 className="text-3xl font-bold pt-12 pb-2 w-44">SOBRE MIM</h2>
           <div className="w-20 h-1 bg-amber-300"></div>
         </div>
         <div>
@@ -53,7 +53,7 @@ export default function Home() {
        <div className="h-0.5 bg-gray-200"></div>
        <div className="md:flex md:gap-20">
             <div>
-                <h2 className="text-4xl font-bold pt-2 pb-2">Nossa Visão, Missão e Valores </h2>
+                <h2 className="text-4xl font-bold pt-2 pb-2 w-44">Nossa Visão, Missão e Valores </h2>
                  <div className="w-20 h-1 bg-amber-300"></div>
             </div>
             <div>
@@ -87,7 +87,7 @@ export default function Home() {
 
 
     <div className="p-4 md:bg-gray-200 md:m-3">
-      <div className="p-4 md:w-8/12 md:bg-white shadow md:mx-auto">
+      <div className="p-4 sm:w-10/12 lg:w-8/12 md:bg-white shadow md:mx-auto">
          <h1 className="text-4xl font-bold text-center pb-2">Serviços</h1>
       <div className="w-20 h-1 bg-amber-300 flex mx-auto"></div>
       <h2 className=" py-6 text-2xl font-bold">CONSULTORIA  EMPRESARIAL | RECRUTAMENTO E SELEÇÃO</h2>
