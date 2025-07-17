@@ -1,21 +1,22 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Contato() {
   return (
   <div className="bg-slate-100 min-h-screen">
     <header className="text-slate-800 flex justify-center items-center flex-col md:bg-gray-200 md:m-3 md: h-90">
-      <img src="/dinamize.jpg" width={150} height={200} />
+      <Image src="/dinamize.jpg" width={150} height={200} alt="logo"/>
       <h2 className="font-bold font-title text-xl pt-4 md:text-3xl">CONSULTORIA DE RH</h2>
       <div className="hidden md:flex">
-        <p className="flex"><a href="/">Sobre Mim/</a></p>
-        <p className="pl-1"><a href="/contato">Contato</a></p>  
+        <p className="flex"><Link href="/">Sobre Mim /</Link></p>
+        <p className="pl-1"><Link href="/contato">Contato</Link></p>  
       </div>
     </header>
     
     <div className="m-4 justify-center md:flex md:gap-16">
-        <img src="/dinamize.jpg" className="w-full md:w-84"/>
+        <Image src="/dinamize.jpg" width={150} height={200} className="w-full md:w-84" alt="eduarda"/>
         <div>
-          <h2 className="font-bold font-title text-4xl pt-10 md:text-3xl"><a href="/">Consultoria de RH</a></h2>
+          <h2 className="font-bold font-title text-4xl pt-10 md:text-3xl"><Link href="/">Consultoria de RH</Link></h2>
           <p className="text-gray-400 pt-6 pb-1 text-2xl">Conectamos talentos às oportunidades certas</p>
           <div className="w-20 h-1 bg-amber-300"></div>
           <p className="pt-4 font-bold">Somos uma consultoria de RH séria, comprometida com resultados reais.</p>

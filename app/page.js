@@ -1,14 +1,16 @@
 import Link from "next/link";
+import Image from "next/image";
+
 
 export default function Home() {
   return (
   <div className="min-h-screen bg-slate-100">
     <header className="text-slate-800 flex justify-center items-center flex-col md:bg-gray-200 md:m-3 md: h-90">
-      <img src="/dinamize.jpg" width={150} height={200} />
+      <Image src="/dinamize.jpg" width={150} height={200} alt="logo"/>
       <h2 className="font-bold font-title text-xl pt-4 md:text-3xl ">CONSULTORIA DE RH</h2>
     <div className="hidden md:flex">
-      <p className="flex"><a href="/">Sobre Mim /</a></p>
-      <p className="pl-1"><a href="/contato">Contato</a></p>  
+      <p className="flex"><Link href="/">Sobre Mim /</Link></p>
+      <p className="pl-1"><Link href="/contato">Contato</Link></p>  
     </div>    
     </header> 
     
@@ -16,7 +18,7 @@ export default function Home() {
     <div className="md:bg-gray-200 md:m-3">
          <div className="p-4 sm:w-10/12 lg:w-8/12 bg-white shadow mx-auto">
       <div className="md:flex md:gap-16">
-        <img src="/bio2.webp" className="w-screen md:w-64"/>
+        <Image src="/bio2.webp" className="w-screen md:w-64" width={150} height={200} alt="eduarda"/>
         <div>
           <h1 className="text-6xl font-bold pt-16 pb-2">Eduarda <br />Machado</h1>
           <div className="w-20 h-1 bg-amber-300"></div>
