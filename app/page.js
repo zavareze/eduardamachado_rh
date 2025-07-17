@@ -55,7 +55,7 @@ export default function Home() {
        <div className="h-0.5 bg-gray-200"></div>
        <div className="md:flex md:gap-20">
             <div>
-                <h2 className="text-4xl font-bold pt-2 pb-2 w-44">Nossa Visão, Missão e Valores </h2>
+                <h2 className="text-4xl font-bold pt-2 pb-2 sm:w-44">Nossa Visão, Missão e Valores </h2>
                  <div className="w-20 h-1 bg-amber-300"></div>
             </div>
             <div>
